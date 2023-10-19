@@ -24,6 +24,27 @@ export const NavBarNavs = () => [
         link : "#contact-us" 
     },
 ]
+import facebook from '../assets/sociaL/facebook.svg'
+import instagram from '../assets/sociaL/instagram.svg'
+import linkedin from '../assets/sociaL/linkedin.svg'
+export const socialMedia = [
+    {
+        name : "facebook" ,
+        link : "https://www.facebook.com/profile.php?id=61551649420493",
+        icon : facebook
+    },
+    {
+        name : "instagram" ,
+        link : "https://www.instagram.com/nexus.estin/",
+        icon : instagram
+    },
+    {
+        name : "linkedin" ,
+        link : "https://www.linkedin.com/company/nexus-security-club/",
+        icon : linkedin
+    },
+]
+
 import educationImage from '../assets/vision/education.svg'
 import mentorshipImage from '../assets/vision/mentorship.svg'
 import competitionsImage from '../assets/vision/competitions.svg'

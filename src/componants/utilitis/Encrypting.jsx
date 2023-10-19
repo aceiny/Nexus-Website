@@ -1,13 +1,13 @@
 import { useEffect, useRef, useState } from "react";
 
-const TARGET_TEXT = "Nexus";
-const CYCLES_PER_LETTER = 5;
-const SHUFFLE_TIME = 40;
+const EncryptingEffect = ({word = "Word"}) => {
 
-const CHARS = "01234567890azertyuiopqsdfghjklmwxcvbnAZERTYUIOPQSDFGHJKLMWXCVBN!#$%^&*():{};|,.<>/?";
-
-const EncryptingEffect = () => {
-    
+  const TARGET_TEXT = word;
+  const CYCLES_PER_LETTER = 5;
+  const SHUFFLE_TIME = 50;
+  
+  const CHARS = "01234567890azertyuiopqsdfghjklmwxcvbnAZERTYUIOPQSDFGHJKLMWXCVBN!#$%^&*():{};|,.<>/?";
+  
   const intervalRef = useRef(null);
 
   const [text, setText] = useState(TARGET_TEXT);

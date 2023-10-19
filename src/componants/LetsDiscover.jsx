@@ -1,8 +1,6 @@
 import React from 'react'
 import ArrowDown from "../assets/arrow-down.svg"
-import facebook from "../assets/social/facebook.svg"
-import instagram from "../assets/social/instagram.svg"
-import linkedin from "../assets/social/linkedin.svg"
+import { socialMedia } from '../data/LandingPage'
 import EncryptingEffect from './utilitis/Encrypting'
 const LetsDiscover = () => {
 
@@ -10,13 +8,13 @@ const LetsDiscover = () => {
     <article className='flex lg:px-[76px] md:px[30px] px-[20px] flex-col items-center mb-[307px]'>
       <div className='letsdiscover-text-social-div relative w-full flex items-center justify-center'>
         <div className=' m-auto flex flex-col items-center justify-center'>
-          <h1 className='lets-discover-title lg:text-[64px] md:text-[55px] text-[48px]'>Welcome to the {<EncryptingEffect/>} Security Club!</h1>
+          <h1 className='lets-discover-title lg:text-[64px] md:text-[55px] text-[48px]'>Welcome to the {<EncryptingEffect word="Nexus"/>} Security Club!</h1>
           <p className='lest-discover-second-p lg:text-[24px] md:text-[22px] text-[20px]'>Step into our world of expertise, forge connections with fellow enthusiasts, and embark on captivating cybersecurity adventures. Come, be a part of this exhilarating journey! </p>
         </div>
         <div className='social-media flex flex-col gap-[28px]'>
-            <img src={facebook} alt="" />
-            <img src={instagram} alt="" />
-            <img src={linkedin} alt="" />
+            {socialMedia.map((social,index)=>{
+              return <a href={social.link}><img src={social.icon} alt={social.name} /></a>
+            })}
             <img src={ArrowDown} alt="" />
         </div>
       </div>
