@@ -1,0 +1,220 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@font-face {
+  font-family: Hammersmith One ;
+  src: url('./assets/fonts/HammersmithOne.ttf');
+}
+body{
+  scroll-behavior: smooth;
+}
+/*navbar*/
+.navbar-navs {
+  color: #FFF;
+  font-family: Hammersmith One, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+/*lets discover*/
+.lets-discover-title {
+  max-width: 770px;
+  color: #FFF;
+  text-align: center;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.60);
+  font-family: Hammersmith One;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-bottom: 42px;
+}
+.lest-discover-second-p{
+  max-width: 878px;
+  color: #FFF;
+  text-align: center;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.60);
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+  margin-bottom: 52px;
+}
+.lets-discover-third-p {
+  color: #FFF;
+  text-align: center;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  font-family: Hammersmith One;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.96px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.down-arrow{
+  animation: bounce 2s ease-out infinite;;
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+@media (width < 900px) {
+  .letsdiscover-text-social-div{
+    flex-direction: column;
+  }
+  .social-media{
+    flex-direction: row; 
+    order: -1;
+    margin-bottom: 14px;
+  }
+
+}
+@media (width < 768px) {
+  #about-us{
+    flex-direction: column;
+    align-items: center;
+    padding: 0 42px;
+    gap: 107px;
+  }
+}
+@media (width < 768px) {
+  
+}
+/*about us*/
+.about-us-title {
+  max-width: 273px;
+  color: #FFF;
+  font-family: Hammersmith One;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.about-us-description {
+  max-width: 640px;
+  color: rgba(255, 255, 255, 0.80);
+  font-family: "Poppins";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+/*our vision*/
+.our-vision-title {
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.our-vision-card-title{
+  color: #FFF;
+  font-family: Hammersmith One;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.our-vision-card-description{
+  max-width: 620px;
+  color: rgba(255, 255, 255, 0.80);
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+/*events*/
+.events-big-title{
+  color: #FFF;
+  font-family: Hammersmith One;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.event-title {
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.event-description {
+  max-width: 517px;
+  color: rgba(255, 255, 255, 0.80);
+  font-family: "Poppins";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.event-button {
+  width: fit-content;
+  padding: 13px 36px ;
+  border-radius: 10px;
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.event-image {
+  width: 419px;
+  height: 589px;
+  border-radius: 10px;
+ box-shadow: #76E494 0px 0px 10px;
+}
+.event-event-date {
+  color: #818181;
+  font-family: Hammersmith One;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.event-event-title{
+  color: #FFF;
+  font-family: Hammersmith One;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+/*core team*/
+.core-team-title {
+  color: #FFF;
+  font-family: Hammersmith One;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.core-team-name{
+  color: #FFF;
+  font-family: Acme;
+  font-size: 32.929px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.317px;
+}
