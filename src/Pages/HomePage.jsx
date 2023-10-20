@@ -7,15 +7,15 @@ import CoreTeam from '../componants/CoreTeam'
 import Events from '../componants/Events'
 const HomePage = () => {
   return (
-    <div className='bg-[#292929] min-h-screen'>
+    <div className='HomePage'>
         <NavBar />
         <LetsDiscover />
         <AboutUs />
-        <OurVision />
         <Events />
-        <CoreTeam />
     </div>
   )
 }
 
 export default HomePage
+//<CoreTeam />
+//<OurVision />

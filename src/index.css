@@ -1,14 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
 @font-face {
   font-family: Hammersmith One ;
   src: url('./assets/fonts/HammersmithOne.ttf');
 }
-* {
+*{
   scroll-behavior: smooth;
+}
+body{
+  background-image: url('./assets/bg.svg');
+  background-position: center;
+  background-size: cover;
+  background-color: #252525;
 }
 /*navbar*/
 .navbar-navs {
@@ -19,6 +24,12 @@
   font-weight: 400;
   line-height: normal;
   text-transform: capitalize;
+}
+.small-screen-navs {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #393939 100%);
+}
+.half-transition {
+  transition: 1s;
 }
 /*lets discover*/
 .lets-discover-title {
@@ -158,7 +169,7 @@
 .event-description {
   max-width: 517px;
   color: rgba(255, 255, 255, 0.80);
-  font-family: "Poppins";
+  font-family: Poppins;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -180,12 +191,36 @@
   width: 419px;
   height: 589px;
   border-radius: 10px;
- box-shadow: #76E494 0px 0px 10px;
+  box-shadow: #76E494 0px 0px 10px;
+}
+@media (width < 768px) {
+  .event-image {
+    width: 80%;
+    height: 80%;
+  }
+}
+
+@media (width < 500px) {
+  .event-container {
+    justify-content: center;
+  }
+  .event-event-date{
+    font-size: 12px;
+  }
+  .event-event-title{
+    font-size: 15px;
+  }
+}
+
+
+@media (width < 350px) {
+  .events-down-arrow {
+    width: 70%;
+  }
 }
 .event-event-date {
   color: #818181;
   font-family: Hammersmith One;
-  font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -193,7 +228,6 @@
 .event-event-title{
   color: #FFF;
   font-family: Hammersmith One;
-  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;

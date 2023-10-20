@@ -13,7 +13,7 @@ const LetsDiscover = () => {
         </div>
         <div className='social-media flex flex-col gap-[28px]'>
             {socialMedia.map((social,index)=>{
-              return <a href={social.link}><img src={social.icon} alt={social.name} /></a>
+              return <a href={social.link} key={index}><img src={social.icon} alt={social.name} /></a>
             })}
             <img src={ArrowDown} alt="" />
         </div>

@@ -1,7 +1,7 @@
 export const NavBarNavs = () => [
     {
         name : "Home" ,
-        link : "/" 
+        link : "" 
     },
     {
         name : "About Us" ,
@@ -24,9 +24,9 @@ export const NavBarNavs = () => [
         link : "#contact-us" 
     },
 ]
-import facebook from '../assets/sociaL/facebook.svg'
-import instagram from '../assets/sociaL/instagram.svg'
-import linkedin from '../assets/sociaL/linkedin.svg'
+import facebook from '../assets/social/facebook.svg'
+import instagram from '../assets/social/instagram.svg'
+import linkedin from '../assets/social/linkedin.svg'
 export const socialMedia = [
     {
         name : "facebook" ,
