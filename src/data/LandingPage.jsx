@@ -87,3 +87,16 @@ export const events = [
     }
     
 ]
+export const commands = {
+    whoami : "nexuser",
+    ls : "nexus.txt nextrace.txt",
+    id : "id = 1337",
+    "cat nexus.txt" : "nexus is a cybersecurity club in estin", 
+    "cat nextrace.txt" : "nextrace is a ctf event organized by nexus see yall in 28/10/2023",
+    "hostname" : "estin",
+    "facebook" : "https://www.facebook.com/profile.php?id=61551649420493",
+    "instagram" : "https://www.instagram.com/nexus.estin/",
+    "linkedin" : "https://www.linkedin.com/company/nexus-security-club/",
+
+    
+}

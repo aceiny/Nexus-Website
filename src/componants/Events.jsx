@@ -15,7 +15,7 @@ const Events = () => {
             <div className='events-container  relative flex md:px-0 px-5 md:flex-col py-[29px] justify-between overflow-hidden'>
               <img src={eventsline} alt="" className='absolute rotate-90 top-[-371px] left-[50%] md:rotate-0 md:top-[-19%] md:left-[62px]'/>
                 {events.map((event,index)=>{
-                  return <EventCard date={event.date} title={event.title} fill={event.fill} />
+                  return <EventCard key={index} id={index} selected={index==selected?true:false} selectedHandler={selectedHandler} date={event.date} title={event.title} fill={event.fill} />
                 })}
             </div>
             <div className='flex items-center gap-[334px] md:gap-[24px] flex-col md:flex-row md:items-start'>
