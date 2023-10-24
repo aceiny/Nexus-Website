@@ -2,10 +2,12 @@ import React from 'react'
 import ArrowDown from "../assets/arrow-down.svg"
 import { socialMedia } from '../data/LandingPage'
 import EncryptingEffect from './utilitis/Encrypting'
+import Bglines from "../assets/topbg.svg"
 const LetsDiscover = () => {
 
   return (
-    <article className='flex lg:px-[76px] md:px[30px] px-[20px] flex-col items-center mb-[307px]'>
+    <article className=' relative flex lg:px-[76px] md:px[30px] w-[100%] px-[20px] flex-col items-center md:mb-[455px] mb-[307px]'>
+      <img src={Bglines} className='topbglines ' alt="" />
       <div className='letsdiscover-text-social-div relative w-full flex items-center justify-center'>
         <div className=' m-auto flex flex-col items-center justify-center'>
           <h1 className='lets-discover-title lg:text-[64px] md:text-[55px] text-[48px]'>Welcome to the {<EncryptingEffect word="Nexus"/>} Security Club!</h1>

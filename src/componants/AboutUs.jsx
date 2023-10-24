@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from '../assets/big-logo.svg'
 import EncryptingEffect from './utilitis/Encrypting'
+import botlines from '../assets/botlines.png'
 const AboutUs = () => {
   return (
     <article id='about-us' className=' flex justify-center lg:gap-[130px] md:gap-[100px] gap-[50px] mb-[440px]'>

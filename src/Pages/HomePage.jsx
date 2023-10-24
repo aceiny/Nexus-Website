@@ -8,14 +8,16 @@ import Events from '../componants/Events'
 import Terminal from '../componants/Terminal'
 const HomePage = () => {
   return (
-    <div className='HomePage'>
+    <div className='HomePage overflow-x-hidden'>
         <NavBar />
         <LetsDiscover />
-        <AboutUs />
-        <OurVision />
-        <Events />
-        <CoreTeam />
-        <Terminal/>
+        <div className='underdiscover'>
+          <AboutUs />
+          <OurVision />
+          <Events />
+          <CoreTeam />
+          <Terminal/>
+        </div>
     </div>
   )
 }

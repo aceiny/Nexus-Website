@@ -15,6 +15,32 @@ body{
   background-size: cover;
   background: linear-gradient(180deg, #232323 0%, #000 100%);
 }
+.letsdiscover{
+  background-image: url('./assets/topbg.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.underdiscover{
+  background-image: url('./assets/botlines.png');
+  background-size: cover;
+}
+@media (width < 1500px) {
+  .underdiscover{
+    background-size: contain;
+  }
+}
+/*lines */ 
+.topbglines{
+  position: absolute;
+  transform: translateY(-20%);
+  width: 100%;
+}
+.botbglines{
+  position: absolute;
+  top: 50%;
+  object-position: center;
+}
 /*navbar*/
 .navbar-navs {
   color: #FFF;
@@ -89,6 +115,10 @@ body{
     order: -1;
     margin-bottom: 14px;
   }
+  .topbglines{
+    scale: 1.5;
+    transform: translateY(0%);
+  }
 
 }
 @media (width < 768px) {
@@ -98,9 +128,21 @@ body{
     padding: 0 42px;
     gap: 107px;
   }
+  .topbglines{
+    scale: 2;
+    transform: translateY(0%);
+  }
+  .botbglines{
+    scale: 2;
+    top: 100%;
+    height: 100%;
+  }
 }
-@media (width < 768px) {
-  
+@media (width < 500px) {
+  .topbglines{
+    scale: 3;
+    transform: translate(6%,8%);
+  }
 }
 /*about us*/
 .about-us-title {
@@ -126,7 +168,6 @@ body{
 .our-vision-title {
   color: #FFF;
   font-family: Poppins;
-  font-size: 48px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -170,18 +211,15 @@ body{
   max-width: 517px;
   color: rgba(255, 255, 255, 0.80);
   font-family: Poppins;
-  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 .event-button {
   width: fit-content;
-  padding: 13px 36px ;
   border-radius: 10px;
   color: #FFF;
   font-family: Poppins;
-  font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -238,7 +276,6 @@ body{
 .core-team-title {
   color: #FFF;
   font-family: Hammersmith One;
-  font-size: 64px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -256,7 +293,6 @@ body{
 .TerminalUser {
   color: #CA1625;
   font-family: Fira Code;
-  font-size: 18px;
   font-style: normal;
   font-weight: 450;
   line-height: 200.2%; /* 36.036px */
@@ -269,4 +305,26 @@ body{
   font-weight: 450;
   line-height: 200.2%;
   text-decoration-line: underline;
+}
+.terminalheader{
+  position: sticky;
+  top: 0;
+  z-index: 55555;
+  background-color: #000;
+  scrollbar-width: 1px;
+}
+.Terminal::-webkit-scrollbar {
+  width: 10px;
+}
+.Terminal::-webkit-scrollbar-track {
+  background: #000;
+}
+.Terminal::-webkit-scrollbar-thumb {
+  background: #CA1625;
+}
+.Terminal::-webkit-scrollbar-thumb:hover {
+  background: #CA1625;
+}
+.Terminal::-webkit-scrollbar-thumb:active {
+  background: #CA1625;
 }

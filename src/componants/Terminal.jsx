@@ -18,9 +18,9 @@ const Terminal = () => {
         }
     } 
   return (
-    <div className=''>
+    <div className='Terminal h-[500px] overflow-y-auto sticky'>
         <TerminalHeader/>
-        <div className='md:px-[82px] px-[25px]'>
+        <div className='md:px-[82px] px-4'>
             <TerminalCommandLine commandHandler={commandHandler} readonly={command.length > 0} />
             <div>
                 {
