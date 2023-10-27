@@ -26,7 +26,7 @@ const Terminal = () => {
                 {
                     command.map((v,i)=> {
                     return <div>
-                            <p className='text-white'>{v}</p>
+                            <p className='text-white terminal-cmd-result'>{v}</p>
                             <TerminalCommandLine 
                                 readonly={!(i === command.length - 1)} 
                                 focus={i === command.length - 1} 

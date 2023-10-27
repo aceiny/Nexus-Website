@@ -30,8 +30,8 @@ const Events = () => {
                       return (
                         <>
                           <h1 className='event-title'>{event.title}</h1>
-                          <p className='event-description sm:text-[16px] text-[10px] px-10'>Our seasoned members are more than just peers; they are your mentors. They offer valuable insights and guidance to help you not only survive but thrive in the ever-evolving realm of cybersecurity.</p>
-                          <p className='event-description mb-[22px] sm:text-[16px] text-[10px] px-10'>**Competitions: We revel in the thrill of cybersecurity challenges. Our goal is to create an environment where you can test your skills, push your limits, and grow in your expertise.</p>
+                          <p className='event-description sm:text-[16px] text-[10px] md:px-0 px-10'>Our seasoned members are more than just peers; they are your mentors. They offer valuable insights and guidance to help you not only survive but thrive in the ever-evolving realm of cybersecurity.</p>
+                          <p className='event-description mb-[22px] sm:text-[16px] text-[10px] md:px-0 px-10'>**Competitions: We revel in the thrill of cybersecurity challenges. Our goal is to create an environment where you can test your skills, push your limits, and grow in your expertise.</p>
                           <button className='event-button bg-[#76E494] sm:py-[13px] sm:px-[36px] py-[8px] px-[22px] sm:text-[16px] text-[10px]'>view more on instagram</button>
                         </>
                       )

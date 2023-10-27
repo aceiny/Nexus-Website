@@ -1,14 +1,17 @@
 import React from 'react'
 import CoreTeamCard from './utilitis/CoreTeamCard'
 import EncryptingEffect from './utilitis/Encrypting'
+import { coreTeam } from '../data/LandingPage'
 const CoreTeam = () => {
   return (
     <div id='our-team' className='pb-[200px]'>
       <h1 className='core-team-title text-[28px] text-center mb-[217px]'>{<EncryptingEffect word='Meet Our Team'/>}</h1>
-      <div className='md:flex-row flex flex-col gap-[150px] md:gap-0 md:justify-between items-center px-[110px]'>
-        <CoreTeamCard bg={"#C8BFA2"}/>
-        <CoreTeamCard bg={"#FFFFF"} />
-        <CoreTeamCard />
+      <div className='md:flex-row flex flex-col gap-[150px] md:gap-0 md:justify-between items-center lg:px-[90px]'>
+        {
+          coreTeam.map((member,index)=>{
+            return <CoreTeamCard key={index} name={member.name} color={member.color} image={member.image} linkedIn={member.linkedIn} github={member.github} />
+          })
+        }
       </div>
     </div>
   )

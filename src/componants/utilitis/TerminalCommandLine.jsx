@@ -13,8 +13,8 @@ const TerminalCommandLine = ({readonly,focus,commandHandler}) => {
     }
   },[focus])
   return (
-    <div className='flex gap-2 items-center my-[22px]'>
-        <p className='TerminalUser md:text-[18px] sm:text-[14px] text-[10px]'>nexuser@estin :<span className='text-[#277ef5]'>~</span><span className='text-white'>$</span></p>
+    <div className='flex sm:text-[18px] text-[10px] gap-2 items-center my-[22px]'>
+        <p className='TerminalUser sm:text-[18px] text-[10px]'>nexuser@estin :<span className='text-[#277ef5]'>~</span><span className='text-white'>$</span></p>
         <input type="text" 
           className='TerminalCommandLineText no-underline border-none outline-none bg-transparent flex-1 h-full' 
           onKeyDown={newcommandHandler} 

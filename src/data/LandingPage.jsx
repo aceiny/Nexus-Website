@@ -45,9 +45,9 @@ export const socialMedia = [
     },
 ]
 
-import educationImage from '../assets/vision/education.svg'
-import mentorshipImage from '../assets/vision/mentorship.svg'
-import competitionsImage from '../assets/vision/competitions.svg'
+import educationImage from '../assets/vision/education.png'
+import mentorshipImage from '../assets/vision/mentorship.png'
+import competitionsImage from '../assets/vision/competitions.png'
 export const OurVisions = [
     {
         title : "education" , 
@@ -100,3 +100,42 @@ export const commands = {
 
     
 }
+
+import roumi from '../assets/core-team/roumi.png'
+import amine from '../assets/core-team/amine.png'
+import abdo from '../assets/core-team/abdo.png'
+export const coreTeam = [
+    {
+        name : "Roumi" ,
+        image : roumi ,
+        color : '#C8BFA2',
+        position : "Council" ,
+        socialMedia : {
+            facebook : "https://www.facebook.com/roumi.roumi.908",
+            instagram : "https://www.instagram.com/roumi_roumi_/",
+            linkedin : "https://www.linkedin.com/in/roumi-roumi-1b4a1a1b4/"
+        }
+    },
+    {
+        name : 'Amine' ,
+        image : amine ,
+        color : '#76E494',
+        position : "Council" ,
+        socialMedia : {
+            facebook : "https://www.facebook.com/amine.benmoussa.524",
+            instagram : "https://www.instagram.com/amine_benmoussa_/",
+            linkedin : "https://www.linkedin.com/in/amine-ben-moussa-2a7b371b4/"
+        }
+    },
+    {
+        name : 'Abdo' ,
+        image : abdo ,
+        color : '#8393A0',
+        position : "Council" ,
+        socialMedia : {
+            facebook : "https://www.facebook.com/abdo.oueslati.5",
+            instagram : "https://www.instagram.com/abdo.oueslati/",
+            linkedin : "https://www.linkedin.com/in/abdo-oueslati-1a5a1b1b4/"
+        }
+    }
+]

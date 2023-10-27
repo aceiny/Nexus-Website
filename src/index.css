@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,6 +7,7 @@
   font-family: Hammersmith One ;
   src: url('./assets/fonts/HammersmithOne.ttf');
 }
+
 *{
   scroll-behavior: smooth;
 }
@@ -231,12 +233,7 @@ body{
   border-radius: 10px;
   box-shadow: #76E494 0px 0px 10px;
 }
-@media (width < 768px) {
-  .event-image {
-    width: 80%;
-    height: 80%;
-  }
-}
+
 
 @media (width < 500px) {
   .event-container {
@@ -289,20 +286,57 @@ body{
   line-height: normal;
   letter-spacing: 1.317px;
 }
+@media (width < 1240px) {
+  .core-team-photo{
+    width: 220px;
+    height: 220px;
+  }
+  
+}
+@media (width < 880px) {
+  .core-team-photo{
+    width: 180px;
+    height: 180px;
+  }
+  
+}
+@media (width < 768px) {
+  .event-image {
+    width: 80%;
+    height: 80%;
+  }
+  .core-team-photo{
+    width: 260px;
+    height: 260px;
+  }
+}
+@media (width < 400px) {
+  .core-team-photo{
+    width: 230px;
+    height: 230px;
+  }
+  
+}
+@media (width < 250px) {
+  .core-team-photo{
+    width: 180px;
+    height: 180px;
+  }
+  
+}
 /*Terminal*/
 .TerminalUser {
   color: #CA1625;
   font-family: Fira Code;
   font-style: normal;
-  font-weight: 450;
+  font-weight: 400;
   line-height: 200.2%; /* 36.036px */
 }
 .TerminalCommandLineText{
   color: #FFF;
   font-family: Fira Code;
-  font-size: 18px;
   font-style: normal;
-  font-weight: 450;
+  font-weight: 400;
   line-height: 200.2%;
   text-decoration-line: underline;
 }
@@ -314,7 +348,7 @@ body{
   scrollbar-width: 1px;
 }
 .Terminal::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
 }
 .Terminal::-webkit-scrollbar-track {
   background: #000;
@@ -327,4 +361,23 @@ body{
 }
 .Terminal::-webkit-scrollbar-thumb:active {
   background: #CA1625;
+}
+
+
+.terminalheaderuser{
+  color: #FFF;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.terminal-cmd-result{
+  color: #FFF;
+  font-family: Fira Code;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 200.2%;
+  text-decoration-line: none
 }
