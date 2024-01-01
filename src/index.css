@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,6 +7,11 @@
 @font-face {
   font-family: Hammersmith One ;
   src: url('./assets/fonts/HammersmithOne.ttf');
+}
+
+.text-acme{
+  font-family: 'Acme', sans-serif;
+
 }
 
 *{
@@ -380,4 +386,9 @@ body{
   font-weight: 450;
   line-height: 200.2%;
   text-decoration-line: none
+}
+
+.bg-linear{
+background: linear-gradient(180deg, #232323 0%, #181717 100%);
+
 }
