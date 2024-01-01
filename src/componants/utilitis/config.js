@@ -11,7 +11,7 @@ export default {
         slogan: {
             description: 'Prints out our clubs solgan.',
             usage: 'slogan',
-            fn: (...args) => '<img src="/src/assets/social/slogan.png" style="margin-top: 20px"  alt="slogan"/>'
+            fn: (...args) => '<img src="/slogan.png" style="margin-top: 20px"  alt="slogan"/>'
 
         }, socials: {
             description: 'Prints out our socials.',
