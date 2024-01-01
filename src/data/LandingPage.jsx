@@ -106,7 +106,7 @@ import amine from '../assets/core-team/amine.png'
 import abdo from '../assets/core-team/abdo.png'
 export const coreTeam = [
     {
-        name : "Roumi" ,
+        name : "ROUMI abdelghafour" ,
         image : roumi ,
         color : '#C8BFA2',
         position : "Council" ,
@@ -117,7 +117,7 @@ export const coreTeam = [
         }
     },
     {
-        name : 'Amine' ,
+        name : 'DJEMMAL mohamedamine' ,
         image : amine ,
         color : '#76E494',
         position : "Council" ,
@@ -128,7 +128,7 @@ export const coreTeam = [
         }
     },
     {
-        name : 'Abdo' ,
+        name : 'BELALMI abdessamie' ,
         image : abdo ,
         color : '#8393A0',
         position : "Council" ,

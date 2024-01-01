@@ -5,7 +5,7 @@ const TerminalHeader = () => {
     return(
         <div className="terminalheader flex flex-col gap-[19px] text-white">
             <div className="flex justify-center px-4 items-center">
-                <h1 className="m-auto terminalheaderuser">nexus@estin:~</h1>
+                <h1 className="m-auto terminalheaderuser ">nexus@estin:~</h1>
                 <div className="sm:text-[18px] text-[10px] flex gap-[10px] items-center">
                     <AiOutlineMinus/>
                     <TbSquare/>

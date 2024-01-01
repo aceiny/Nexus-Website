@@ -5,7 +5,7 @@ import { coreTeam } from '../data/LandingPage'
 const CoreTeam = () => {
   return (
     <div id='our-team' className='pb-[200px]'>
-      <h1 className='core-team-title text-[28px] text-center mb-[217px]'>{<EncryptingEffect word='Meet Our Team'/>}</h1>
+      <h1 className='core-team-title text-[28px] text-center mb-[100px]'>{<EncryptingEffect word='Meet Our Team'/>}</h1>
       <div className='md:flex-row flex flex-col gap-[150px] md:gap-0 md:justify-between items-center lg:px-[90px]'>
         {
           coreTeam.map((member,index)=>{
@@ -13,6 +13,7 @@ const CoreTeam = () => {
           })
         }
       </div>
+        <h2 className='text-[#76E494] font-bold text-[44px] text-center mt-10'>Core Council</h2>
     </div>
   )
 }
