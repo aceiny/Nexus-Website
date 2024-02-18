@@ -9,7 +9,7 @@ import { events } from '../data/LandingPage'
 const Events = () => {
   const [selected,setSelected] =useState(0) ; const selectedHandler = (id) => {setSelected(id)}
   return (
-    <div id='events' className='mb-[376px]'>
+    <div data-aos="zoom-in" data-aos-duration="2000" id="events" className='mb-[376px]'>
         <h1 className='events-big-title text-center mb-[172px]'>{<EncryptingEffect word="Events"/>}</h1>
         <div className='flex flex-col md:flex-row gap-[245px] md:gap-[30px] justify-center'>
             <div className='events-container  relative flex md:px-0 px-5 md:flex-col py-[29px] justify-between overflow-hidden'>

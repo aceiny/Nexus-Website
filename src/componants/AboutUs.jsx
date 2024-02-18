@@ -4,7 +4,7 @@ import EncryptingEffect from './utilitis/Encrypting'
 import botlines from '../assets/botlines.png'
 const AboutUs = () => {
   return (
-    <article id='about-us' className=' flex justify-center lg:gap-[130px] md:gap-[100px] gap-[50px] mb-[440px]'>
+    <article data-aos="fade-up" id="about-us" className=' flex justify-center lg:gap-[130px] md:gap-[100px] gap-[50px] mb-[440px]'>
         <img src={logo} alt="" className=' max-w-[290px] max-h-[304px] sm:max-w-[314px] sm:max-h-[328px]'/>
         <div className='flex flex-col gap-[42px]'>
             <h1 className='about-us-title'>{<EncryptingEffect word='About Us'/>}</h1>

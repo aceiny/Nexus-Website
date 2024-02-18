@@ -52,11 +52,12 @@ const EncryptingEffect = ({word = "Word"}) => {
     }
   }, [])
   return (
-        <span
-        onMouseEnter={scramble}
-        onMouseLeave={stopScramble}
-        >{text}</span>
+    <span>{text}</span>
   );
 };
 
 export default EncryptingEffect;
+/*        <span
+        onMouseEnter={scramble}
+        onMouseLeave={stopScramble}
+        >{text}</span>*/
